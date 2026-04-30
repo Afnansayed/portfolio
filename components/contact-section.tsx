@@ -6,7 +6,7 @@ export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    budget: 'select',
+    type: 'select',
     message: '',
   });
 
@@ -21,10 +21,13 @@ export function ContactSection() {
         {/* Heading */}
         <div className="mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-4">
-            <span className="text-foreground">LET&apos;S WORK</span>
+            <span className="text-foreground">GET IN</span>
             <br />
-            <span className="text-muted/40">TOGETHER</span>
+            <span className="text-muted/40">TOUCH</span>
           </h1>
+          <p className="text-muted-foreground text-lg max-w-xl">
+            Currently looking for internship opportunities and interesting projects to collaborate on.
+          </p>
         </div>
 
         {/* Form */}
@@ -36,10 +39,10 @@ export function ContactSection() {
               <label className="block text-sm font-medium text-muted-foreground mb-2">Name</label>
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="Afnan Razin"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all"
+                className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-4 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all shadow-sm"
               />
             </div>
 
@@ -48,27 +51,27 @@ export function ContactSection() {
               <label className="block text-sm font-medium text-muted-foreground mb-2">Email</label>
               <input
                 type="email"
-                placeholder="Your@email.com"
+                placeholder="hello@example.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all"
+                className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-4 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all shadow-sm"
               />
             </div>
           </div>
 
-          {/* Budget Field */}
+          {/* Project Type Field */}
           <div>
-            <label className="block text-sm font-medium text-muted-foreground mb-2">Budget</label>
+            <label className="block text-sm font-medium text-muted-foreground mb-2">What are you interested in?</label>
             <select
-              value={formData.budget}
-              onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-              className="w-full bg-muted/20 border border-muted/40 text-foreground rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all appearance-none cursor-pointer"
+              value={formData.type}
+              onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+              className="w-full bg-muted/20 border border-muted/40 text-foreground rounded-lg px-4 py-4 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all appearance-none cursor-pointer shadow-sm"
             >
               <option value="select" disabled>Select...</option>
-              <option value="5k">$5,000 - $10,000</option>
-              <option value="10k">$10,000 - $25,000</option>
-              <option value="25k">$25,000 - $50,000</option>
-              <option value="50k">$50,000+</option>
+              <option value="internship">Internship Opportunity</option>
+              <option value="full-stack">Full Stack Project</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
             </select>
           </div>
 
@@ -76,20 +79,20 @@ export function ContactSection() {
           <div>
             <label className="block text-sm font-medium text-muted-foreground mb-2">Message</label>
             <textarea
-              placeholder="Message"
-              rows={6}
+              placeholder="Tell me about your project or opportunity..."
+              rows={5}
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-3 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all resize-none"
+              className="w-full bg-muted/20 border border-muted/40 text-foreground placeholder-muted-foreground rounded-lg px-4 py-4 focus:outline-none focus:border-primary focus:bg-muted/30 transition-all resize-none shadow-sm"
             />
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-primary/90 active:scale-95 transition-all text-lg"
+            className="w-full bg-primary text-white font-bold py-4 px-6 rounded-xl hover:bg-primary/90 active:scale-[0.98] transition-all text-lg shadow-lg shadow-primary/20"
           >
-            Submit
+            Send Message
           </button>
         </form>
       </div>

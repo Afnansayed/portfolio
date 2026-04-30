@@ -8,29 +8,32 @@ const Hero = () => {
                 {/* Hero Section */}
                 <section className="mb-16">
                     <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-8 leading-tight">
-                        SOFTWARE
+                        FULL STACK
                         <br />
-                        <span className="text-muted">ENGINEER</span>
+                        <span className="text-muted">DEVELOPER</span>
                     </h1>
 
                     <p className="text-lg text-muted-foreground max-w-2xl mb-12 leading-relaxed">
-                        Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas
-                        into beautifully crafted products.
+                        CSE student at Northern University Bangladesh. Building robust, scalable Full Stack 
+                        applications with a focus on high-performance backends and seamless user experiences.
                     </p>
 
                     {/* Stats */}
-                    <div className="flex gap-16 mb-16">
-                        <div>
-                            <div className="text-4xl font-bold text-primary mb-2">+12</div>
-                            <p className="text-sm text-muted-foreground uppercase tracking-wide">Years of<br />Experience</p>
+                    <div className="flex flex-wrap gap-8 md:gap-16 mb-16">
+                        <div className="relative group">
+                            <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">+2</div>
+                            <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Years of<br />Experience</p>
+                            <div className="absolute -bottom-2 left-0 w-8 h-1 bg-primary/20 rounded-full group-hover:w-full transition-all" />
                         </div>
-                        <div>
-                            <div className="text-4xl font-bold text-primary mb-2">+46</div>
-                            <p className="text-sm text-muted-foreground uppercase tracking-wide">Projects<br />Completed</p>
+                        <div className="relative group">
+                            <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">+15</div>
+                            <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Projects<br />Completed</p>
+                            <div className="absolute -bottom-2 left-0 w-8 h-1 bg-primary/20 rounded-full group-hover:w-full transition-all" />
                         </div>
-                        <div>
-                            <div className="text-4xl font-bold text-primary mb-2">+20</div>
-                            <p className="text-sm text-muted-foreground uppercase tracking-wide">Worldwide<br />Clients</p>
+                        <div className="relative group">
+                            <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">+10</div>
+                            <p className="text-xs text-muted-foreground uppercase tracking-widest font-semibold">Tech Stack<br />Mastered</p>
+                            <div className="absolute -bottom-2 left-0 w-8 h-1 bg-primary/20 rounded-full group-hover:w-full transition-all" />
                         </div>
                     </div>
                 </section>
@@ -57,10 +60,10 @@ const Hero = () => {
                                 </svg>
                             </div>
 
-                            <h3 className="text-2xl font-bold mb-2 text-card">DYNAMIC<br />ANIMATION,<br />MOTION DESIGN</h3>
+                            <h3 className="text-2xl font-bold mb-2 text-card">NEXT.JS, REACT,<br />TYPESCRIPT, TAILWIND</h3>
 
                             <button className="mt-8 inline-flex items-center gap-2 text-card hover:gap-3 transition-all">
-                                <span className="font-semibold">See More</span>
+                                <span className="font-semibold">Explore Projects</span>
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
@@ -88,7 +91,7 @@ const Hero = () => {
                                 </svg>
                             </div>
 
-                            <h3 className="text-2xl font-bold mb-2 text-secondary-foreground">FRAMER, FIGMA,<br />WORDPRESS, REACTJS</h3>
+                            <h3 className="text-2xl font-bold mb-2 text-secondary-foreground">NODE.JS, EXPRESS,<br />PRISMA, POSTGRES,<br />REDIS, DOCKER</h3>
                         </div>
                     </div>
                 </section>

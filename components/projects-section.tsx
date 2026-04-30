@@ -1,29 +1,31 @@
 'use client';
 
 import { ArrowUp, MoveUpRight } from "lucide-react";
+import Image from "next/image";
 
 export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: 'NajmAI',
-      description: 'SaaS Framer Template',
-      color: 'from-purple-600 to-purple-900',
-      borderColor: 'border-purple-500',
+      title: 'E-commerce Engine',
+      image: "/project/cox-wave.png",
+      description: 'A full-stack commerce solution featuring complex Prisma schemas, PostgreSQL relational mapping, and secure Better-Auth integration.',
+      tech: ['Next.js', 'Prisma', 'Postgres', 'Better Auth'],
     },
     {
       id: 2,
-      title: 'Damas',
-      description: 'Free Framer Template',
-      color: 'from-blue-600 to-cyan-600',
-      borderColor: 'border-blue-500',
+      title: 'SaaS Architecture',
+      image: "/project/tutor-flow.png",
+      description: 'Enterprise-ready dashboard with real-time state management, secure Stripe payment gateways, and optimized data fetching.',
+      tech: ['React', 'Redux', 'TanStack Query', 'Stripe'],
+
     },
     {
       id: 3,
-      title: 'Faseelh',
-      description: 'Free Framer Template',
-      color: 'from-green-600 to-emerald-600',
-      borderColor: 'border-green-500',
+      title: 'RESTful Core API',
+      image: "/project/cox-wave.png",
+      description: 'High-performance backend built with Express and Node.js, featuring containerized deployment and PostgreSQL data persistence.',
+      tech: ['Node.js', 'Express', 'Postgres', 'Docker'],
     },
   ];
 
@@ -33,37 +35,48 @@ export function ProjectsSection() {
         {/* Heading */}
         <div className="mb-16 ">
           <h2 className="text-6xl md:text-7xl font-bold mb-2">
-            <span className="text-foreground">RECENT</span>
+            <span className="text-foreground">FEATURED</span>
             <br />
             <span className="text-muted/40">PROJECTS</span>
           </h2>
         </div>
 
         {/* Projects Grid */}
-        <div className="space-y-8 max-w-3xl mx-auto">
+        <div className="space-y-12 max-w-3xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex items-center gap-6 pb-8 border-b border-muted/20 last:border-b-0 group hover:opacity-90 transition-opacity"
+              className="flex flex-col md:flex-row items-start md:items-center gap-6 pb-12 border-b border-muted/20 last:border-b-0 group hover:opacity-95 transition-opacity"
             >
               {/* Project Image Placeholder */}
-              <div className={`flex-shrink-0 w-24 h-24 rounded-2xl bg-gradient-to-br ${project.color} border-2 ${project.borderColor} shadow-lg flex items-center justify-center cursor-pointer`}>
-                <div className="text-2xl font-bold text-white opacity-80">{project.title.charAt(0)}</div>
+              <div className={`flex-shrink-0 w-32 h-32 rounded-3xl  shadow-xl overflow-hidden cursor-pointer group-hover:scale-105 transition-transform duration-300`}>
+                <Image
+                  width={200}
+                  height={200}
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Project Info */}
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <MoveUpRight className="text-muted-foreground group-hover:text-primary transition-colors w-6 h-6" />
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   {project.description}
                 </p>
-              </div>
-
-              {/* Decorative dot */}
-              <div className="flex-shrink-0 w-10 h-10 rounded-full " >
-                <MoveUpRight className="text-primary" />
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((t) => (
+                    <span key={t} className="px-3 py-1 bg-muted/30 text-muted-foreground rounded-full text-xs font-medium border border-muted/20">
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

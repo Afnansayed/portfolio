@@ -1,54 +1,78 @@
 'use client';
 
+import Image from "next/image";
+
 export function ToolsSection() {
   const tools = [
     {
       id: 1,
-      name: 'Framer',
-      description: 'Website Builder',
-      icon: '◻',
+      name: 'Next.js',
+      description: 'Full-stack Framework',
+      image: '/skill/next.jpeg',
       bgColor: 'bg-white',
-      textColor: 'text-black',
     },
     {
       id: 2,
-      name: 'Figma',
-      icon: '◉',
-      description: 'Design Tool',
+      name: 'React',
+      description: 'Frontend Library',
+      image: '/skill/react.png',
       bgColor: 'bg-white',
-      textColor: 'text-red-500',
     },
     {
       id: 3,
-      name: 'Lemon Squeezy',
-      description: 'Payments Provider',
-      icon: '🍋',
+      name: 'TypeScript',
+      description: 'Type-safe JS',
+      image: '/skill/type.png',
       bgColor: 'bg-white',
-      textColor: 'text-yellow-500',
     },
     {
       id: 4,
-      name: 'ChatGPT',
-      description: 'AI Assistant',
-      icon: '◯',
+      name: 'Tailwind CSS',
+      description: 'Styling Framework',
+      image: '/skill/tailwind.png',
       bgColor: 'bg-white',
-      textColor: 'text-gray-700',
     },
     {
       id: 5,
-      name: 'Notion',
-      description: 'Productivity Tool',
-      icon: 'N',
+      name: 'Prisma',
+      description: 'Next-gen ORM',
+      image: '/skill/prisma.webp',
       bgColor: 'bg-white',
-      textColor: 'text-black',
     },
     {
       id: 6,
-      name: 'Nextjs',
-      description: 'React framework',
-      icon: '»',
+      name: 'PostgreSQL',
+      description: 'Relational Database',
+      image: '/skill/postgress.png',
       bgColor: 'bg-white',
-      textColor: 'text-black',
+    },
+    {
+      id: 7,
+      name: 'Express.js',
+      description: 'Backend Framework',
+      image: '/skill/express.png',
+      bgColor: 'bg-white',
+    },
+    {
+      id: 8,
+      name: 'Redux',
+      description: 'State Management',
+      image: '/skill/redux.png',
+      bgColor: 'bg-white',
+    },
+    {
+      id: 9,
+      name: 'TanStack Query',
+      description: 'Data Fetching',
+      image: '/skill/tan.png',
+      bgColor: 'bg-white',
+    },
+    {
+      id: 10,
+      name: 'JavaScript',
+      description: 'Core Programming',
+      image: '/skill/java.jpg',
+      bgColor: 'bg-white',
     },
   ];
 
@@ -58,32 +82,36 @@ export function ToolsSection() {
         {/* Heading */}
         <div className="mb-16">
           <h2 className="text-6xl md:text-7xl font-bold mb-2">
-            <span className="text-foreground">PREMIUM</span>
+            <span className="text-foreground">TECHNICAL</span>
             <br />
-            <span className="text-muted/40">TOOLS</span>
+            <span className="text-muted/40">SKILLS</span>
           </h2>
         </div>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
           {tools.map((tool) => (
             <div
               key={tool.id}
-              className="flex flex-col items-start gap-3 p-4 rounded-xl hover:bg-muted/5 transition-colors cursor-pointer group"
+              className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl hover:bg-muted/10 transition-all duration-300 cursor-pointer group"
             >
               {/* Icon Container */}
-              <div className={`w-12 h-12 rounded-xl ${tool.bgColor} flex items-center justify-center shadow-md group-hover:shadow-lg transition-all`}>
-                <span className={`text-lg font-bold ${tool.textColor}`}>
-                  {tool.icon}
-                </span>
+              <div className={`w-20 h-20 rounded-2xl ${tool.bgColor} flex items-center justify-center shadow-lg group-hover:shadow-primary/20 group-hover:scale-110 transition-all duration-500 overflow-hidden `}>
+                <Image
+                  src={tool.image}
+                  alt={tool.name}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Tool Info */}
               <div>
-                <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1 whitespace-nowrap">
                   {tool.name}
                 </h3>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-wider">
                   {tool.description}
                 </p>
               </div>

@@ -13,7 +13,7 @@ export function ProfileCard() {
           <div className="relative bg-primary rounded-2xl overflow-hidden aspect-square">
             <Image
               src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-              alt="Aaabad Ahmed"
+              alt="Afnan Sayed Razin"
               fill
               className="object-cover"
             />
@@ -36,7 +36,7 @@ export function ProfileCard() {
 
         {/* Bio */}
         <p className="text-sm text-card-foreground text-center mb-6 leading-relaxed">
-          A Software Engineer who has developed countless innovative solutions.
+          A CSE student and Full Stack Developer specialized in building scalable backend systems and high-performance web applications.
         </p>
 
         {/* Social Links */}

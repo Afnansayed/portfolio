@@ -4,24 +4,27 @@ export function ExperienceSection() {
   const experiences = [
     {
       id: 1,
-      company: 'PixelForge Studios',
+      company: 'Northern University Bangladesh',
+      role: 'B.Sc. in Computer Science & Engineering',
       description:
-        'Led the design team in creating user-centric mobile and web applications, improving the user experience and increasing user engagement.',
-      period: 'Jan 2020 - Present',
+        'Currently pursuing CSE degree. Focused on mastering complex backend architectures, relational database optimization, and high-performance system design.',
+      period: 'Present',
     },
     {
       id: 2,
-      company: 'BlueWave Innovators',
+      company: 'Full-Stack Development Focus',
+      role: 'Backend-Heavy Full Stack Developer',
       description:
-        'Developed and implemented design strategies for new product lines, collaborated closely with engineers and product managers.',
-      period: 'Jun 2017 - Dec 2019',
+        'Building scalable applications with a focus on robust Express/Node.js backends. Expertly managing data with Prisma and PostgreSQL while learning containerization with Docker.',
+      period: '2022 - Present',
     },
     {
       id: 3,
-      company: 'TrendCraft Solutions',
+      company: 'Diploma in Engineering',
+      role: 'Computer Technology',
       description:
-        'Designed user interfaces for e-commerce platforms, focusing on enhancing usability and visual appeal.',
-      period: 'Mar 2015 - May 2017',
+        'Laid the foundation for my backend journey by mastering core programming logic, data structures, and database fundamentals.',
+      period: 'Completed',
     },
   ];
 
@@ -31,7 +34,7 @@ export function ExperienceSection() {
         {/* Heading */}
         <div className="mb-16">
           <h2 className="text-6xl md:text-7xl font-bold mb-2">
-            <span className="text-foreground">12 YEARS OF</span>
+            <span className="text-foreground">EDUCATION &</span>
             <br />
             <span className="text-muted/40">EXPERIENCE</span>
           </h2>
@@ -45,21 +48,26 @@ export function ExperienceSection() {
           {experiences.map((exp, index) => (
             <div
               key={exp.id}
-              className="relative pb-8 pl-10"
+              className="relative pb-12 pl-10 last:pb-0"
             >
               {/* Timeline dot */}
               <div className="absolute -left-3.5 top-1 w-5 h-5 rounded-full bg-primary border-4 border-background shadow-lg" />
 
               {/* Content */}
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">
-                  {exp.company}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <div className="group">
+                <div className="flex items-center justify-between mb-1">
+                  <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {exp.company}
+                  </h3>
+                  <span className="text-xs text-muted-foreground font-medium px-3 py-1 bg-muted/20 rounded-full">
+                    {exp.period}
+                  </span>
+                </div>
+                <div className="text-primary text-sm font-semibold mb-3 uppercase tracking-wider">
+                  {exp.role}
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
                   {exp.description}
-                </p>
-                <p className="text-xs text-muted-foreground font-medium">
-                  {exp.period}
                 </p>
               </div>
             </div>
