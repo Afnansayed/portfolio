@@ -23,11 +23,17 @@ export function AboutSection() {
               <Code2 className="w-6 h-6" />
               <h3 className="text-xl font-bold uppercase tracking-wider">My Journey</h3>
             </div>
+
             <p className="text-muted-foreground leading-relaxed">
-              My programming journey started during my Diploma in Computer Technology. I was immediately drawn to how code could turn abstract ideas into functional tools. What began with simple C programs has evolved into a deep passion for building complex, production-ready Full Stack applications.
+              My programming journey began during my Diploma in Computer Technology, where I first discovered the power of turning ideas into real, working solutions. What started with writing simple programs in C quickly grew into a strong passion for building modern web applications.
             </p>
+
             <p className="text-muted-foreground leading-relaxed">
-              I love the challenge of architectural design—balancing a sleek, performant frontend with a robust, scalable backend. For me, coding isn't just about syntax; it's about problem-solving and creating meaningful user experiences.
+              Over time, I transitioned into the full stack development and started developing full-stack applications that focus on performance, scalability, and clean user experience. I enjoy working on both frontend and backend, but I naturally gravitate toward crafting intuitive and visually appealing interfaces using NextJS, tailwindCSS.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              For me, programming is more than just writing code — it’s about solving real-world problems, continuously learning, and building products that people can actually use and benefit from.
             </p>
           </div>
 
@@ -38,8 +44,13 @@ export function AboutSection() {
                 <Gamepad2 className="w-6 h-6" />
                 <h3 className="text-xl font-bold uppercase tracking-wider">Beyond Coding</h3>
               </div>
+
               <p className="text-muted-foreground leading-relaxed">
-                When I&apos;m not in front of a screen, I like to keep myself active and creative. I&apos;m a big fan of outdoor sports—especially football and cricket—which help me clear my head and stay focused.
+                Outside of coding, I like to stay active and maintain a balanced lifestyle. I enjoy playing football and cricket, which help me stay energetic and improve my teamwork mindset.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                I also enjoy cycling in my free time—it gives me a chance to refresh my mind and come back with better focus. These activities help me stay disciplined, motivated, and mentally sharp.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-4">
@@ -60,7 +71,7 @@ export function AboutSection() {
             <div className="p-6 bg-muted/20 rounded-3xl border border-muted/40">
               <h4 className="text-foreground font-bold mb-2">Personality</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
-                "I consider myself a lifelong learner. I thrive in collaborative environments where I can learn from others and share my own knowledge. I value discipline, consistency, and a good cup of coffee."
+                "I’m a curious and dedicated developer who believes in continuous improvement. I enjoy learning new technologies, adapting to challenges, and collaborating with others. I value consistency, attention to detail, and building things that truly make an impact."
               </p>
             </div>
           </div>
