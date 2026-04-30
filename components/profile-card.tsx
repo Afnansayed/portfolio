@@ -12,7 +12,7 @@ export function ProfileCard() {
           {/* <div className="absolute inset-0 bg-primary rounded-2xl -rotate-6 opacity-20 blur-lg" /> */}
           <div className="relative  rounded-2xl overflow-hidden aspect-square">
             <Image
-              src="/my_picture2.png"
+              src="/my_picture3.png"
               alt="Afnan Sayed Razin"
               fill
               className="object-cover"
@@ -34,7 +34,7 @@ export function ProfileCard() {
 
         {/* Bio */}
         <p className="text-sm text-card-foreground text-center mb-6 leading-relaxed">
-          A CSE student and Full Stack Developer specialized in building scalable backend systems and high-performance web applications.
+          A Front-end Developer at (zsi.ai) with 1.5 years of experience, and a CSE student at NUB specialized in building high-performance web applications.
         </p>
 
         {/* Social Links */}
@@ -42,16 +42,13 @@ export function ProfileCard() {
           <a href="https://github.com/Afnansayed" target="_blank" rel="noopener noreferrer" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
             <Github className="w-5 h-5" />
           </a>
-          <a href="#" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
+          <a href="https://www.linkedin.com/in/afnan-sayed-razin" target="_blank" rel="noopener noreferrer" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="#" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
-            <Twitter className="w-5 h-5" />
-          </a>
-          <a href="#" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
+          <a href="https://www.facebook.com/zofaf.razin" target="_blank" rel="noopener noreferrer" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
             <Facebook className="w-5 h-5" />
           </a>
-          <a href="https://wa.me/8801234567890" target="_blank" rel="noopener noreferrer" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
+          <a href="https://wa.me/01864079730" target="_blank" rel="noopener noreferrer" className="p-2  rounded-lg text-primary hover:bg-primary hover:text-white transition-all">
             <MessageCircle className="w-5 h-5" />
           </a>
         </div>

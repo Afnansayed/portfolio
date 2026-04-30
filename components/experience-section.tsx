@@ -4,6 +4,14 @@ export function ExperienceSection() {
   const experiences = [
     {
       id: 1,
+      company: 'zsi.ai',
+      role: 'Front-end Developer',
+      description:
+        'Developed high-performance, responsive user interfaces for AI-driven platforms. Collaborated with backend teams to integrate complex APIs and optimized frontend performance for a seamless user experience.',
+      period: '1.5 Years',
+    },
+    {
+      id: 2,
       company: 'Northern University Bangladesh',
       role: 'B.Sc. in Computer Science & Engineering',
       description:
@@ -11,7 +19,7 @@ export function ExperienceSection() {
       period: 'Present',
     },
     {
-      id: 2,
+      id: 3,
       company: 'Full-Stack Development Focus',
       role: 'Backend-Heavy Full Stack Developer',
       description:
@@ -19,7 +27,7 @@ export function ExperienceSection() {
       period: '2022 - Present',
     },
     {
-      id: 3,
+      id: 4,
       company: 'Diploma in Engineering',
       role: 'Computer Technology',
       description:
