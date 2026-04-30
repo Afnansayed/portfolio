@@ -8,11 +8,11 @@ export function ProfileCard() {
     <div className="md:sticky md:top-0  w-full md:w-92 flex items-center justify-center p-6">
       <div className="bg-card rounded-3xl p-6 w-full max-w-sm shadow-2xl">
         {/* Profile Image Container */}
-        <div className="relative mb-6">
-          <div className="absolute inset-0 bg-primary rounded-2xl -rotate-6 opacity-20 blur-lg" />
-          <div className="relative bg-primary rounded-2xl overflow-hidden aspect-square">
+        <div className="mb-6">
+          {/* <div className="absolute inset-0 bg-primary rounded-2xl -rotate-6 opacity-20 blur-lg" /> */}
+          <div className="relative  rounded-2xl overflow-hidden aspect-square">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+              src="/my-picture.jpeg"
               alt="Afnan Sayed Razin"
               fill
               className="object-cover"

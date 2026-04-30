@@ -2,6 +2,8 @@ import Navbar from "@/components/navbar";
 import { ProfileCard } from "@/components/profile-card";
 
 
+import { Footer } from "@/components/footer";
+
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return <div className="max-w-[1080px] mx-auto ">
         <Navbar />
@@ -13,6 +15,7 @@ const CommonLayout = ({ children }: { children: React.ReactNode }) => {
                 {children}
             </main>
         </div>
+        <Footer />
     </div>;
 };
 

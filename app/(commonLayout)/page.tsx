@@ -6,7 +6,6 @@ import { ContactSection } from '@/components/contact-section';
 import { ExperienceSection } from '@/components/experience-section';
 import Hero from '@/components/hero';
 import { ProjectsSection } from '@/components/projects-section';
-import { Footer } from '@/components/footer';
 import { ToolsSection } from '@/components/tools-section';
 
 export default function Page() {
@@ -19,7 +18,6 @@ export default function Page() {
       <ExperienceSection />
       <ToolsSection />
       <ContactSection />
-      <Footer />
     </div>
 
   );
