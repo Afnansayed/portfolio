@@ -14,9 +14,9 @@ export default function Page() {
       <Hero />
       <AboutSection />
       <ProjectsSection />
-      <BlogSection />
       <ExperienceSection />
       <ToolsSection />
+      <BlogSection />
       <ContactSection />
     </div>
 
