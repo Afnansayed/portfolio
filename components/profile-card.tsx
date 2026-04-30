@@ -12,7 +12,7 @@ export function ProfileCard() {
           {/* <div className="absolute inset-0 bg-primary rounded-2xl -rotate-6 opacity-20 blur-lg" /> */}
           <div className="relative  rounded-2xl overflow-hidden aspect-square">
             <Image
-              src="/my-picture.jpeg"
+              src="/my_picture2.png"
               alt="Afnan Sayed Razin"
               fill
               className="object-cover"
