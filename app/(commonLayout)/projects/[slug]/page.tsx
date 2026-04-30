@@ -34,37 +34,39 @@ export default function ProjectDetailsPage() {
           </Link>
 
           {/* Title & Links */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4">{project.title}</h1>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((t) => (
-                  <span key={t} className="px-3 py-1 bg-muted/30 text-muted-foreground rounded-full text-xs font-medium border border-muted/20">
-                    {t}
-                  </span>
-                ))}
+          <div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 ">{project.title}</h1>
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+              <div>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((t) => (
+                    <span key={t} className="px-3 py-1 bg-muted/30 text-muted-foreground rounded-full text-xs font-medium border border-muted/20">
+                      {t}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="space-y-2">
-              <Link
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-2 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
-              >
-                View
-                <ExternalLink className="w-4 h-4" />
-              </Link>
-              <Link
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-2 bg-muted/20 border border-muted/40 rounded-xl font-bold hover:bg-muted/30 transition-all"
-              >
-                GitHub
-                <Github className="w-4 h-4" />
-              </Link>
+              <div className="space-y-2">
+                <Link
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-2 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+                >
+                  View
+                  <ExternalLink className="w-4 h-4" />
+                </Link>
+                <Link
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-2 bg-muted/20 border border-muted/40 rounded-xl font-bold hover:bg-muted/30 transition-all"
+                >
+                  GitHub
+                  <Github className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
 
