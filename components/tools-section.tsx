@@ -8,7 +8,7 @@ export function ToolsSection() {
       id: 1,
       name: 'Next.js',
       description: 'Full-stack Framework',
-      image: '/skill/next.jpeg',
+      image: '/skill/images.jpeg',
       bgColor: 'bg-white',
     },
     {
@@ -22,14 +22,14 @@ export function ToolsSection() {
       id: 3,
       name: 'TypeScript',
       description: 'Type-safe JS',
-      image: '/skill/type.png',
+      image: '/skill/type.svg',
       bgColor: 'bg-white',
     },
     {
       id: 4,
       name: 'Tailwind CSS',
       description: 'Styling Framework',
-      image: '/skill/tailwind.png',
+      image: '/skill/tailwwind.jpg',
       bgColor: 'bg-white',
     },
     {
@@ -43,35 +43,35 @@ export function ToolsSection() {
       id: 6,
       name: 'PostgreSQL',
       description: 'Relational Database',
-      image: '/skill/postgress.png',
+      image: '/skill/postgress.webp',
       bgColor: 'bg-white',
     },
     {
       id: 7,
       name: 'Express.js',
       description: 'Backend Framework',
-      image: '/skill/express.png',
+      image: '/skill/express2.png',
       bgColor: 'bg-white',
     },
     {
       id: 8,
       name: 'Redux',
       description: 'State Management',
-      image: '/skill/redux.png',
+      image: '/skill/redux.jpg',
       bgColor: 'bg-white',
     },
     {
       id: 9,
       name: 'TanStack Query',
       description: 'Data Fetching',
-      image: '/skill/tan.png',
+      image: '/skill/tan2.png',
       bgColor: 'bg-white',
     },
     {
       id: 10,
       name: 'JavaScript',
       description: 'Core Programming',
-      image: '/skill/java.jpg',
+      image: '/skill/java2.jpg',
       bgColor: 'bg-white',
     },
   ];
@@ -96,7 +96,7 @@ export function ToolsSection() {
               className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl hover:bg-muted/10 transition-all duration-300 cursor-pointer group"
             >
               {/* Icon Container */}
-              <div className={`w-20 h-20 rounded-2xl ${tool.bgColor} flex items-center justify-center shadow-lg group-hover:shadow-primary/20 group-hover:scale-110 transition-all duration-500 overflow-hidden `}>
+              <div className={`w-20 h-20 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-primary/20 group-hover:scale-110 transition-all duration-500 overflow-hidden `}>
                 <Image
                   src={tool.image}
                   alt={tool.name}
