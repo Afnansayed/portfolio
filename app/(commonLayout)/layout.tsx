@@ -5,7 +5,7 @@ import { ProfileCard } from "@/components/profile-card";
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return <div className="max-w-[1080px] mx-auto ">
         <Navbar />
-        <div className="flex flex-col lg:flex-row w-full    mt-24">
+        <div className="flex flex-col lg:flex-row w-full gap-10 mt-28">
             <aside className="w-full md:w-92 shrink-0">
                 <ProfileCard />
             </aside>

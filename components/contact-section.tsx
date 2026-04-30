@@ -25,9 +25,21 @@ export function ContactSection() {
             <br />
             <span className="text-muted/40">TOUCH</span>
           </h1>
-          <p className="text-muted-foreground text-lg max-w-xl">
+          <p className="text-muted-foreground text-lg max-w-xl mb-8">
             Currently looking for internship opportunities and interesting projects to collaborate on.
           </p>
+          
+          {/* Direct Contact Info */}
+          <div className="flex flex-wrap gap-8 py-4 border-y border-muted/20 mb-12">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Email</p>
+              <p className="text-foreground font-medium">afnanrazin@example.com</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Phone / WhatsApp</p>
+              <p className="text-foreground font-medium">+880 1234-567890</p>
+            </div>
+          </div>
         </div>
 
         {/* Form */}
